@@ -9,7 +9,7 @@ from .serializers import PaymentSerializer
 from products.models import Order
 
 # Create your views here.
-stripe.api_key = settings.STRIPE_SECRET_KEY or "sk_test_51Qq3ugDHAlnaRlWtBQAkaPQSodxJvomfBA8CauMbl5ZjyRNr2rKiixy2YcU3gbfdM5pQNNjLydhG2EbFQ9f5bio400Y3QoPKQL"
+stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
 class CreateChargeView(views.APIView):
